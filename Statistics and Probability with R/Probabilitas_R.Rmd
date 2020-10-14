@@ -1,0 +1,47 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+```{r}
+
+```
+
+#6. Pengiriman 20 pasang sepatu dengan brand yang sama ke sebuah toko retail tertentu berisikan 3 produk cacat.Jika seorang reseller mengambil 2 pasang sepatu, berapa probabilitas reseller itu mendapat sepatu cacat.
+
+```{r}
+#probabilitas 2 unit rusak
+dbinom(x = 2, size = 10, prob = 0.15)
+
+```
+
+
+```{r}
+#probabilitas kumulatif 2 unit rusak
+pbinom (q = 2, size = 20, prob = 0.15)
+```
+
+
+```{r}
+#probabilitas 1 unit rusak
+dbinom(x = 1, size = 10, prob = 0.15)
+
+```
+
+
+```{r}
+#probabilitas kumulatif 1 unit rusak
+pbinom (q = 1, size = 20, prob = 0.15)
+```
+
+
+```{r}
+#probabilitas tidak ada unit rusak
+dbinom(x = 0, size = 10, prob = 0.15)
+
+```
+
+
+```{r}
+#probabilitas kumulatif tidak ada unit rusak
+pbinom (q = 0, size = 20, prob = 0.15)
+```
